@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#2196F3"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="logo"
+        android:textColor="#FCFAFA"
+        android:textSize="90dp"
+        android:gravity="center_horizontal"
+        android:layout_marginTop="50dp"
+        />
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Mettings for small busniesses"
+        android:textColor="#F1F1F1"
+        android:textSize="15dp"
+        android:layout_below="@id/textView1"
+        android:gravity="center"
+        />
+    <Button
+        android:drawableLeft="@drawable/icons8_facebook"
+        android:id="@+id/button1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Login via Facebook"
+        android:background="#0055FF"
+        android:layout_below="@id/textView2"
+        android:layout_marginLeft="100dp"
+        android:layout_marginTop="50dp"
+        android:textColor="#FCFCFA"
+        android:paddingLeft="10dp"
+        android:paddingRight="20dp"
+        android:onClick="browser1"
+        />
+
+    <Button
+        android:drawableLeft="@drawable/icons8_linkedin"
+        android:id="@+id/button2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Login via Linkedln"
+        android:background="#00BCD4"
+        android:layout_below="@id/button1"
+        android:layout_marginLeft="100dp"
+        android:layout_marginTop="30dp"
+        android:textColor="#FCFCFA"
+        android:paddingLeft="10dp"
+        android:paddingRight="27dp"
+        android:onClick="browser2"
+        />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="---------or---------"
+        android:textSize="30dp"
+        android:textColor="#F8F8F8"
+        android:layout_below="@id/button2"
+        android:gravity="center"
+        android:layout_marginTop="30dp"
+        />
+
+    <EditText
+        android:id="@+id/editTextEmail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textEmailAddress"
+        android:layout_below="@id/textView3"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="120dp"
+        android:textSize="15dp"
+        android:hint="Enter e-mail address"
+        android:textColorHint="#EEEEEC"
+        />
+
+    <Button
+        android:id="@+id/buttonNext"
+        android:layout_width="wrap_content"
+        android:layout_height="35dp"
+        android:layout_below="@id/editTextEmail"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="100dp"
+        android:background="#4CAF50"
+        android:text="Next" />
+
+
+</RelativeLayout>
